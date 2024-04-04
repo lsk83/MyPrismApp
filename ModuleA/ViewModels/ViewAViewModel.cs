@@ -24,7 +24,7 @@ namespace ModuleA.ViewModels
         /// <param name="navigationContext"></param>
         public void OnNavigatedTo(NavigationContext navigationContext)
         {
-            Message += navigationContext.Parameters.GetValue<string>("id");
+            Message += navigationContext.Parameters.GetValue<int>("id");
         }
 
         /// <summary>        
